@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOGO Offer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>YAY! It's BOGO</h1>
+      <form id="bogoForm">
+        <!-- 1 Unit -->
+        <div class="option2">
+          <div class="option">
+            <label>
+              <input type="radio" name="unit" value="1" />
+              <div class="unit1_inner">
+                <span>
+                  <span>1 Unit</span>
+                  <span class="discount">10% Off</span>
+                </span>
+                <p class="unit1-text">Standard price</p>
+              </div>
+            </label>
+            <div class="price">
+              <span>$10.00 USD</span>
+              <span class="original-price">$24.00 USD</span>
+            </div>
+          </div>
+
+          <div class="size-color hidden">
+            <div class="size_color_label">
+              <label for="size">Size</label>
+              <label for="color">Color</label>
+            </div>
+            <div class="size-color-inner">
+              <label>#1</label>
+              <select name="size1">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+              <select name="color1">
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+                <option value="Red">Red</option>
+              </select>
+            </div>
+            <div class="size-color-inner">
+              <label>#2</label>
+              <select name="size2">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+              <select name="color2">
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+                <option value="Red">Red</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 Units -->
+        <div class="option2 popular">
+          <div class="option">
+            <label>
+              <input type="radio" name="unit" value="2" checked />
+              <span>2 Units</span>
+              <span class="discount">20% Off</span>
+            </label>
+            <div class="price">
+              <span>$18.00 USD</span>
+              <span class="original-price">$24.00 USD</span>
+            </div>
+            <div class="trapezoid"></div>
+            <span class="most-popular">MOST POPULAR</span>
+          </div>
+
+          <div class="size-color">
+            <div class="size_color_label">
+              <label for="size">Size</label>
+              <label for="color">Color</label>
+            </div>
+            <div class="size-color-inner">
+              <label>#1</label>
+              <select name="size1">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+              <select name="color1">
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+                <option value="Red">Red</option>
+              </select>
+            </div>
+            <div class="size-color-inner">
+              <label>#2</label>
+              <select name="size2">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+              <select name="color2">
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+                <option value="Red">Red</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Units -->
+        <div class="option2">
+          <div class="option">
+            <label>
+              <input type="radio" name="unit" value="3" />
+              <span>3 Units</span>
+              <span class="discount">30% Off</span>
+            </label>
+            <div class="price">
+              <span>$24.00 USD</span>
+              <span class="original-price">$24.00 USD</span>
+            </div>
+          </div>
+          <div class="size-color hidden">
+            <div class="size_color_label">
+              <label for="size">Size</label>
+              <label for="color">Color</label>
+            </div>
+
+            <div class="size-color-inner">
+              <label>#1</label>
+              <select name="size1">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+              <select name="color1">
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+                <option value="Red">Red</option>
+              </select>
+            </div>
+            <div class="size-color-inner">
+              <label>#2</label>
+              <select name="size2">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+              <select name="color2">
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+                <option value="Red">Red</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Total -->
+        <div class="total">
+          <span>Free Delivery</span>
+          <div class="total-price">
+            <span>Total: </span>
+            <span id="total">$18.00 USD</span>
+          </div>
+        </div>
+
+        <!-- Add to Cart -->
+        <button type="button" class="add-to-cart">Add to Cart</button>
+      </form>
+      <p class="credits">@ Powered by Pumper</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
